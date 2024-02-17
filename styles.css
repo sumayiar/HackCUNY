@@ -1,0 +1,20 @@
+body{
+    background-color: #FFFAF0;
+}
+
+ul{
+    list-style: none;
+    text-align: right;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+}
