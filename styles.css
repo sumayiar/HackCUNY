@@ -3,43 +3,47 @@ body{
     background-image: linear-gradient(315deg, #fff000 0%, #ed008c 74%);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-h1{
-    text-align: center;
+    
 }
 
 h1 {
-    font-family: 'Arial', sans-serif;
-    font-size: 2.5em;
-    color: #ff6f61; /* Reddish color */
-    animation: coolMove 8s ease-in-out infinite, colorChange 8s ease-in-out infinite alternate;
-  }
-  
-  @keyframes coolMove {
+    font-size: 3em;
+    color: #333; /* Dark gray text color */
+    text-transform: uppercase;
+    position: relative;
+    animation: slideIn 1.5s ease-out forwards;
+}
+
+@keyframes slideIn {
     0% {
-      transform: translateX(-100%);
-    }
-    50% {
-      transform: translateX(100%);
+        opacity: 0;
+        transform: translateY(-50px);
     }
     100% {
-      transform: translateX(-100%);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
-  @keyframes colorChange {
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ff6f61; /* Reddish color */
+    animation: growLine 1s ease-out forwards;
+}
+
+@keyframes growLine {
     0% {
-      color: #5F0F40; /* Reddish color */
-    }
-    50% {
-      color: #310E68; /* Bluish color */
+        width: 0;
     }
     100% {
-      color: #ff6f61; /* Reddish color */
+        width: 100%;
     }
-  }
-  
+}
 
 @keyframes tonext {
     75% {
@@ -164,6 +168,18 @@ h1 {
     font-size: 2em;
   }
   
+  .link {
+    font-size: 24px; /* Set font size to make it big */
+    color: pink; /* Set text color to pink */
+    font-weight: bold; /* Make text bold */
+    text-decoration: none; /* Remove underline */
+}
+
+.link:hover {
+    color: #ff69b4; /* Change text color on hover */
+}
+
+
   .carousel__snapper {
     position: absolute;
     top: 0;
