@@ -12,6 +12,7 @@ h1 {
     text-transform: uppercase;
     position: relative;
     animation: slideIn 1.5s ease-out forwards;
+    text-align: center;
 }
 
 @keyframes slideIn {
