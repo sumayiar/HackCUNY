@@ -9,6 +9,37 @@ h1{
     text-align: center;
 }
 
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    color: #ff6f61; /* Reddish color */
+    animation: coolMove 8s ease-in-out infinite, colorChange 8s ease-in-out infinite alternate;
+  }
+  
+  @keyframes coolMove {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes colorChange {
+    0% {
+      color: #5F0F40; /* Reddish color */
+    }
+    50% {
+      color: #310E68; /* Bluish color */
+    }
+    100% {
+      color: #ff6f61; /* Reddish color */
+    }
+  }
+  
 
 @keyframes tonext {
     75% {
