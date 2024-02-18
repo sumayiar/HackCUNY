@@ -5,6 +5,11 @@ body{
     background-size: cover;
 }
 
+h1{
+    text-align: center;
+}
+
+
 @keyframes tonext {
     75% {
       left: 0;
@@ -88,7 +93,7 @@ body{
   
   .carousel {
     position: relative;
-    padding-top: 75%;
+    padding-top: 110%;
     filter: drop-shadow(0 0 10px #0003);
     perspective: 100px;
   }
@@ -249,5 +254,33 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     object-fit: cover;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .nature,
+  .city {
+    margin: 0 10px; /* Adjust spacing between buttons */
+  }
+  
+  .nature a,
+  .city a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #EE696B; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    transition: transform 0.5s ease, background-color 0.5s ease; /* Slow animation */
+  }
+  
+  .nature a:hover,
+  .city a:hover {
+    background-color: #523A78; /* Darker green on hover */
+    transform: scale(1.1); /* Scale effect on hover */
   }
   
